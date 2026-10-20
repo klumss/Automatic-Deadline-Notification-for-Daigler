@@ -1,0 +1,16 @@
+[project]
+name = "pythonproject"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "playwright>=1.64.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "tabulate>=0.10.0",
+]
