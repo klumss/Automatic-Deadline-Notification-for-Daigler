@@ -57,7 +57,7 @@ formatted = formatted + "\n---------------------------------"
 
 #The notification sender
 
-topic = "daigler-angeles-deadlines-college"
+topic = "YOUR TOPIC NAME HERE"
 url = f"https://ntfy.sh/{topic}"
 datetoday = datetime.date.today()
 
