@@ -8,4 +8,6 @@ The schedule can be set in the main.yml file.
 
 All dependencies are listed in pyproject.toml, I recommend using uv for setup.
 
+IMPORTANT NOTE: The notification system uses ntfy.sh, you can download the app on IOS and Android. Just change the topic variable.
+
 NOTE: This project is not affiliated with Ateneo de Davao University. This is just a personal project of mine.
