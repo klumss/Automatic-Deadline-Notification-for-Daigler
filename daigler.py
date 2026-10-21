@@ -35,10 +35,6 @@ with sync_playwright() as p:
             "date" : datetitle
         })
     
-    
-    #check
-    #page.wait_for_url("**/my/")
-    
     #close
     browser.close()
 
@@ -48,14 +44,13 @@ df["title"] = df["title"].replace(r"\bis due\b", "",regex=True)
 markdown_df = df.to_markdown(index=False, colalign=("left", "right"))
 markdown_df = markdown_df[226:]
 
-
 formatted_markdown = markdown_df.split("\n")
 
 formatted = [f"{row}\n\n" for row in formatted_markdown]
 formatted = "\n".join(formatted)
 formatted = formatted + "\n---------------------------------"
 
-#The notification sender
+#notification sender
 
 topic = "YOUR TOPIC NAME HERE"
 url = f"https://ntfy.sh/{topic}"
@@ -68,7 +63,5 @@ post = requests.post(
         "Title" : f"Daigler Deadlines as of {datetoday}"
     }
 )
-
-print(f"Sent Notification. {datetime.datetime.now()}")
 
 
